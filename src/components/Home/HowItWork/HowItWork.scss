@@ -1,0 +1,166 @@
+
+/**
+*
+* how-it-work-section
+*
+*/
+@import '../../../styles/shared/color.scss';
+.how-it-work-section {
+    padding-top: 160px;
+    padding-bottom: 130px;
+    .title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+  
+    .how-it-card {
+      background: rgba($color: $white, $alpha: 0.11) 0% 0% no-repeat padding-box;
+      border: 1px solid rgba($color: #707070, $alpha: 0.15);
+      border-radius: 20px;
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 30px;
+      transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+  
+      &:hover,
+      &.active {
+        box-shadow: 0px 0px 20px #00000017;
+        border-color: transparent;
+        background: $white 0% 0% no-repeat padding-box;
+      }
+  
+      .card-top {
+        display: grid;
+        grid-template-columns: 87px 1fr;
+        grid-column-gap: 25px;
+        align-items: center;
+      }
+  
+      .icon-holder {
+        width: 87px;
+        height: 87px;
+        background: $primary 0% 0% no-repeat padding-box;
+        border-radius: 11px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .title {
+        font-size: 26px;
+        margin-bottom: 0;
+        text-align: left;
+      }
+  
+      .card-bottom {
+        display: grid;
+        grid-template-columns: 87px 1fr;
+        grid-column-gap: 25px;
+        justify-content: center;
+        .no {
+          width: 100%;
+          text-align: center;
+          font-size: 60px;
+          font-weight: 700;
+          letter-spacing: 0px;
+          color: rgba($color: $black, $alpha: 0.12);
+        }
+      }
+  
+      .text {
+        font-size: 18px;
+        line-height: 30px;
+        color: $black;
+      }
+    }
+  }
+
+  @media(max-width:575px){
+    .how-it-work-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .how-it-card {
+          padding: 25px;
+          box-sizing: border-box;
+          .title {
+            font-size: 19px;
+            margin-bottom: 30px;
+          }
+    
+          .text {
+            font-size: 16px;
+    
+            // br {
+            //   display: none;
+            // }
+          }
+    
+          .card-top,
+          .card-bottom {
+            grid-template-columns: 80px 1fr;
+            grid-column-gap: 18px;
+          }
+    
+          .card-bottom {
+            .no {
+              font-size: 50px;
+            }
+          }
+    
+          .icon-holder {
+            width: 80px;
+            height: 80px;
+    
+            img {
+              transform: scale(0.8);
+            }
+          }
+        }    
+    }
+}
+
+@media(max-width:300px){
+    .how-it-work-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .how-it-card {
+          padding: 3px;
+          box-sizing: border-box;
+          .title {
+            font-size: 19px;
+            margin-bottom: 30px;
+          }
+    
+          .text {
+            font-size: 16px;
+    
+            br {
+              display: none;
+            }
+          }
+    
+          .card-top,
+          .card-bottom {
+            grid-template-columns: 80px 1fr;
+            grid-column-gap: 18px;
+          }
+    
+          .card-bottom {
+            .no {
+              font-size: 50px;
+            }
+          }
+    
+          .icon-holder {
+            width: 80px;
+            height: 80px;
+    
+            img {
+              transform: scale(0.8);
+            }
+          }
+        }
+    }
+}
