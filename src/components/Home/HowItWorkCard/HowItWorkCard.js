@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HowItWorkCard = (worksData) => {
-    const {workTitle,workDescription,workIcon,workCard,id} = worksData.worksData;
+    const {workTitle,workTitle2,workDescription,workIcon,workCard,id} = worksData.worksData;
     return (
         <div className="col-lg-6">
         <div className="how-it-card active">
@@ -10,7 +10,7 @@ const HowItWorkCard = (worksData) => {
               <img src={workIcon} alt="icon"/>
             </div>
 
-            <div className="title">{workTitle}</div>
+            <div className="title">{workTitle} <br />{workTitle2}</div>
           </div>
 
           <div className="card-bottom">

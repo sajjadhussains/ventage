@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul className="navbar-nav right-nav ms-auto">
+            <ul className="navbar-nav right-nav ml-auto">
                 <li className="nav-item">
                     <a className="nav-link active" href="/training.html">
                         Training Sessions

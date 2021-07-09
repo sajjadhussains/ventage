@@ -11,25 +11,25 @@ const BenefitsInfo = () => {
             benefitTitle: 'Top Talent',
             benefitDescription: 'Train with current college athletes turned private coaches',
             benefitImg: benefitImg1,
-            card:'cardFirst',
-            cardActive:'active',
-            id:1
+            card: 'cardFirst',
+            cardActive: 'active',
+            id: 1
         },
         {
             benefitTitle: 'Direct Payment',
             benefitDescription: 'Pay hardworking student athletes directly to support their educations',
             benefitImg: benefitImg2,
-            card:'cardSecond',
+            card: 'cardSecond',
             // cardActive:'active',
-            id:2
+            id: 2
         },
         {
             benefitTitle: 'Ease of Use',
             benefitDescription: 'Search by sport, college, position and rating, book easily with one-touch on our app.',
             benefitImg: benefitImg3,
-            card:'cardThird',
+            card: 'cardThird',
             // cardActive:'active',
-            id:3
+            id: 3
         }
 
     ]
@@ -37,11 +37,11 @@ const BenefitsInfo = () => {
         <section className="benefits-section">
             <div className="container">
                 <h1 className="title">Benefits</h1>
-            <div className="card-container">
-            {
-                benefitsData.map(benefit =><Benefits benefit={benefit} key={benefit.id}></Benefits>)
-            }
-            </div>
+                <div className="card-container">
+                    {
+                        benefitsData.map(benefit => <Benefits benefit={benefit} key={benefit.id}></Benefits>)
+                    }
+                </div>
             </div>
         </section>
     );

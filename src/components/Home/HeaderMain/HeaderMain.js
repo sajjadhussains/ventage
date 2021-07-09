@@ -20,7 +20,7 @@ const HeaderMain = () => {
                 </div>
               </div>
     
-              <div className="player-img-container col-lg-4">
+              <div className="player-img-container">
                 <img src={player} alt="image"/>
               </div>
             </div>

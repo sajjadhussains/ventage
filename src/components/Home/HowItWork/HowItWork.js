@@ -16,19 +16,22 @@ const HowItWork = () => {
             workCard:'active'
         },
         {
-            workTitle:"One-Touch Scheduling",
+            workTitle:"One-Touch",
+            workTitle2:"Scheduling",
             workDescription:'Book, cancel or modify your session  with the touch of a finger',
             workIcon:calendar,
             id:'02'
         },
         {
-            workTitle:'Payment Made   Easy',
+            workTitle:'Payment Made',
+            workTitle2:"easy",
             workDescription:'Payments are handled in app, taxes and NCAA reporting requirements are calculated by student athletes',
             workIcon:dollar,
             id:'03'
         },
         {
-            workTitle:'Easy Communication',
+            workTitle:'Easy',
+            workTitle2:"Communication",
             workDescription:'Ask athletes questions, receive feedback from your training session or  request additional workout or drills',
             workIcon:comment,
             id:'04'
